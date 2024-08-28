@@ -1,0 +1,66 @@
+.secaoFooter {
+    background-color: black;
+    margin: 20px 20px;
+}
+
+.footerLogoCenariar {
+    position: relative;
+    margin: 0;
+    text-align: left;
+
+}
+
+.desenvolvedores {
+    
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.logo {
+    top: 10px;
+    left: 0;
+    max-width: 200px;
+    height: auto;
+}
+
+div h3 {
+    text-align: center;
+ 
+    font-weight: bold;
+    color: white;
+}
+
+.div-contato p {
+    color: white;
+    font-size: 20px;
+}
+
+.centralizado {
+    margin-right: 60px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    /* Cor dos ícones */
+    font-size: 40px;
+    /* Tamanho dos ícones */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    /* Cor ao passar o mouse */
+}
