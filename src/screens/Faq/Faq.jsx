@@ -54,7 +54,7 @@ function Faq() {
 
     return (
         <section className={css.secaoDuvidasFrequentes}>
-          <div className="container">
+          <div className={css.container}>
             <h2>Dúvidas Frequentes</h2>
             {getPerguntas()}
           </div>

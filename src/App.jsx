@@ -1,24 +1,24 @@
 import FloatingWhatsapp from './components/FloatingWhatsapp.jsx'
-import WhoWeAre from './screens/WhoWeAre.jsx'
-import Home from './screens/Home.jsx'
+import WhoWeAre from './screens/WhoWeAre/WhoWeAre.jsx'
+import Home from './screens/Home/Home.jsx'
 import Faq from './screens/Faq/Faq.jsx'
 import Footer from './screens/Footer/Footer.jsx'
-import CustomerOpinions from './screens/CustomerOpinions.jsx'
-import Samples from './screens/Samples.jsx'
+import CustomerOpinions from './screens/CustomerOpinions/CustomerOpinions.jsx'
+import Samples from './screens/Samples/Samples.jsx'
 import ContactUs from './screens/ContactUs/ContactUs.jsx'
+
 
 function App() {
   return (
     <>
-      {/* <Home/> */}
-      <WhoWeAre text={"Consectetur adipisicing deserunt deserunt dolore cillum elit dolor amet labore deserunt consequat nisi magna aliqua.Mollit esse dolore amet minim duis reprehenderit incididunt."}/>
+      <Home/>
+      <WhoWeAre/>
+      <Samples/> 
       <Faq/>
+      <CustomerOpinions/>
       <ContactUs/>
       <Footer/>
       <FloatingWhatsapp/>
-
-      {/* <Samples/> 
-      <CustomerOpinions/>*/}
     </>
   )
 }

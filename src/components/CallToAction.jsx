@@ -10,8 +10,7 @@ const Button = styled.button`
   padding: 10px 20px;    
   border: none;           
   border-radius: 30px;     
-  font-family: 'Inter', sans-serif; 
-  font-weight: 300;       
+  font-family: 'Inter', sans-serif;    
   cursor: pointer;       
   transition: background-color 0.3s ease; 
   font-size: 1.5vw; 

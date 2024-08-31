@@ -1,0 +1,54 @@
+.fundo-tela {
+  position: relative;
+  background: linear-gradient(to right, #98d5ab, #f3a1a8);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.titulo-carrossel {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 100px;
+}
+
+.meu-carrossel {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  padding: 10px 0; /* Espaço para os botões de navegação */
+}
+
+.meu-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-container {
+  text-align: center;
+  border: 8px solid white;
+  height: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.imagem {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.nome-imagem {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}

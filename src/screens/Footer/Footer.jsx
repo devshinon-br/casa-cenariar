@@ -5,10 +5,8 @@ import logoCenariar from '../../assets/logo_cenariar_fundo_branco-.png';
 
 function Footer() {
     return (
-
         <section className={css.secaoFooter}>
-
-            <div className={css.desenvolvedores}>
+            <div className={css.container}>
                 <div className={css['footerLogoCenariar']}>
                     <img src={logoCenariar} alt="Logo Cenariar" className={css.logo} />
                 </div>
@@ -18,7 +16,7 @@ function Footer() {
                     <p><i className="fas fa-phone"></i> +55 34 99664-6441</p>
                 </div>
 
-                <div>
+                <div className={css.redesSociais}>
                     <h3 className={css['centralizado']}>Redes sociais</h3>
                     <div className={css['social-icons']}>
                         <a href="https://www.facebook.com/profile.php?id=61557559003256">
@@ -27,9 +25,7 @@ function Footer() {
                             <i className="fab fa-instagram"></i></a>
                     </div>
                 </div>
-
             </div>
-
         </section>
     );
 }

@@ -1,6 +1,10 @@
 .secaoDuvidasFrequentes {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 50px 0;
+}
+
+.secaoDuvidasFrequentes h2 {
+  margin-bottom: 50px;
 }
 
 .container {
@@ -16,6 +20,10 @@ h2 {
   color: black;
 }
 
+.secaoDuvidasFrequentes p {
+  font-size: 0.8rem !important;
+}
+
 .duvidaContainer {
   background-color: black;
   border-radius: 20px; /* aplicação de arredondamento da border-radius*/
@@ -28,8 +36,7 @@ h2 {
 }
 
 .pergunta {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
   padding: 15px;
   color: white;
@@ -39,23 +46,22 @@ h2 {
   width: 100%;
 }
 
-
 .seta::after {
-  content: '\25BC'; /* Código Unicode para uma seta para baixo */
-  font-size: 2rem;
+  content: "\25BC"; /* Código Unicode para uma seta para baixo */
+  font-size: 1rem;
   color: white; /* Cor branca para a seta */
   display: inline-block;
   margin-left: 0.5rem; /* Espaço entre o texto e a seta */
-margin-right: 20px;
+  margin-right: 20px;
 }
 
 .seta::after {
-  content: ''; /* Remover a seta adicional */
+  content: ""; /* Remover a seta adicional */
 }
 
 .resposta {
   margin: 10px 0 0;
-  font-size: 1rem;
+  font-size: 0.6rem !important;
   color: white;
   padding: 15px;
 }

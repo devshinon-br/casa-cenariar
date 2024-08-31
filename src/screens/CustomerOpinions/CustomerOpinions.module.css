@@ -1,0 +1,52 @@
+.fundo-tela {
+  position: relative;
+  background: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.titulo-carrossel {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.meu-carrossel {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  padding: 10px 0; /* Espaço para os botões de navegação */
+}
+
+.meu-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-container {
+  text-align: center;
+  height: 200px;
+  box-shadow: 0px 4px 10px rgba(233, 230, 230, 0.1);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.imagem {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.avaliacao {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
