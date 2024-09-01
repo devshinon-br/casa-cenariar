@@ -31,7 +31,6 @@
     width: 30%;
 }
 
-
 .leftText {
     position: relative;
     font-size: 2rem;
@@ -45,6 +44,10 @@
 .right {
     flex: 1; 
     padding: 20px;
+}
+
+.right a {
+    text-decoration: none;
 }
 
 .rightText{

@@ -18,7 +18,7 @@ function Samples() {
     ];
 
     return (
-        <section className={css['fundo-tela']}>
+        <section id='espacos' className={css['fundo-tela']}>
             <div className={css.container}>
                 <h2 className={css['titulo-carrossel']}>Nossos Espaços</h2>
                 <Swiper

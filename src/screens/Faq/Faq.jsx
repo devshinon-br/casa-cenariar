@@ -18,9 +18,6 @@ function Faq() {
             .catch(error => console.error('Erro ao carregar as FAQs:', error));
     }, []);
     
-
-    // Função para alternar o índice ativo. Se o índice clicado já estiver ativo, ele será desativado (definido como null).
-    // Caso contrário, o índice clicado será definido como o ativo.
     function handleToggle(index) {
         setActiveIndex(prevIndex => (prevIndex === index ? null : index));
     }
@@ -31,11 +28,8 @@ function Faq() {
                 duvidasFrequentes.map((duvida, index) => (
                     <div key={index} className={css.duvidaContainer}>
                         <div
-                            // Adiciona a classe CSS 'pergunta' ao elemento e define um manipulador de clique que chama a função handleToggle com o índice atual.
-                            // Exibe a pergunta da FAQ e um ícone de seta que muda de direção com base no estado ativo (expandido ou colapsado).
                             className={css.pergunta}
-                            onClick={() => handleToggle(index)}
-                        >
+                            onClick={() => handleToggle(index)}>
                             {duvida.pergunta}
                             <span className={css.seta}>
                                 {activeIndex === index ? '∧ ' : '∨ '}
@@ -53,7 +47,7 @@ function Faq() {
     }
 
     return (
-        <section className={css.secaoDuvidasFrequentes}>
+        <section id='faq' className={css.secaoDuvidasFrequentes}>
           <div className={css.container}>
             <h2>Dúvidas Frequentes</h2>
             {getPerguntas()}

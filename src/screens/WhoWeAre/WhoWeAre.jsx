@@ -4,7 +4,7 @@ import css from './WhoWeAre.module.css';
 
 function WhoWeAre() {
   return (
-    <div className={css.container}>
+    <div id="quem-somos" className={css.container}>
       <div className={css.textContainer}>
         <h1>Quem somos?</h1>
         <p>Consectetur adipisicing deserunt deserunt dolore cillum elit dolor amet labore deserunt consequat nisi magna aliqua. Mollit esse dolore amet minim duis reprehenderit incididunt.</p>

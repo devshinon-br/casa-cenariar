@@ -19,7 +19,7 @@ function CustomerOpinions() {
     ];
 
     return (
-        <section className={css['fundo-tela']}>
+        <section id='opiniao-cliente' className={css['fundo-tela']}>
             <div className={css.container}>
                 <h2 className={css['titulo-carrossel']}>Qual é a opinião dos nossos clientes?</h2>
                 <Swiper

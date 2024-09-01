@@ -2,9 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 // Estilo para o botão de ação
-const Button = styled.button`
+const Button = styled.a`
   background-color: #000; 
-  color: #fff;            
+  color: #fff;          
+  display:flex;
+  align-items: center;
+  justify-content: center;  
   width: 400px;           
   height: 80px;          
   padding: 10px 20px;    
@@ -14,6 +17,7 @@ const Button = styled.button`
   cursor: pointer;       
   transition: background-color 0.3s ease; 
   font-size: 1.5vw; 
+  text-decoration: none;
 
   @media (max-width: 768px) {
     width: 100%; 
@@ -27,7 +31,7 @@ const Button = styled.button`
 
 function CallToAction() {
     return (
-        <Button>Fale com a gente</Button>
+        <Button href='#entre-em-contato'>Fale com a gente</Button>
     );
 }
 

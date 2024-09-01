@@ -11,11 +11,11 @@ const Header = () => {
           </a>
         </div>
         <nav className={css.menu}>
-          <li><a href="#who-we-are">Quem Somos</a></li>
-          <li><a href="#samples">Nossos Espaços</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
+          <li><a href="#espacos">Nossos Espaços</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#customer-opinions">Opinião dos Clientes</a></li>
-          <li><a href="#contact-us">Fale com a gente</a></li>
+          <li><a href="#opiniao-cliente">Opinião dos Clientes</a></li>
+          <li><a href='#entre-em-contato'>Fale com a gente</a></li>
         </nav>
       </div>
     </header>

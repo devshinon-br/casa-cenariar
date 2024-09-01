@@ -6,7 +6,7 @@ import Header from '../Header/Header';
 function Home() {
 
   return (
-    <section className={css.home}>
+    <section id='home' className={css.home}>
       <Header/>
       <div className={css.imgFundo}>
         <img src={imgInicial} alt="Logo Cenariar" />
@@ -19,11 +19,9 @@ function Home() {
         </div>
         <div className={css.right}>
           <p className={css.rightText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor inLorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Sed do eiusmod tempor incididunt utcididunt ut labore etLorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut dolore magna aliqua.
+          <a href='https://www.instagram.com/casacenariar/' target="_blank">A Casa Cenariar</a> é a mais nova casa de criação de conteúdo de Uberlândia, 
+          aqui a locação conta com cenários de vários países para fazer vídeos e fotos: 
+          Caraíva, Tulum com essa banheira linda, Grécia, Itália e até Marrocos
           </p>
         </div>
       </div>

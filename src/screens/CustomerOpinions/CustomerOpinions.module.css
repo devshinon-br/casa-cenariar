@@ -14,7 +14,8 @@
 .titulo-carrossel {
   font-size: 1.5rem;
   color: white;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .meu-carrossel {
@@ -34,7 +35,6 @@
 .imagem-container {
   text-align: center;
   height: 200px;
-  box-shadow: 0px 4px 10px rgba(233, 230, 230, 0.1);
   margin-bottom: 10px;
   border-radius: 5px;
 }
@@ -49,4 +49,6 @@
   color: white;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 0px 30px;
 }

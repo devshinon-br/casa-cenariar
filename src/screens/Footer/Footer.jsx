@@ -8,7 +8,9 @@ function Footer() {
         <section className={css.secaoFooter}>
             <div className={css.container}>
                 <div className={css['footerLogoCenariar']}>
-                    <img src={logoCenariar} alt="Logo Cenariar" className={css.logo} />
+                    <a href='#home'>
+                        <img src={logoCenariar} alt="Logo Cenariar" className={css.logo} />
+                    </a>
                 </div>
 
                 <div className={css['div-contato']}>
