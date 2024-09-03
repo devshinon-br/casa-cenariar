@@ -29,16 +29,15 @@
 }
 
 .menu a {
-  border: 2px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 30px;
-  width: 150px; 
-  padding: 10px 15px; 
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
+  width: 150px;
+  padding: 10px 15px;
+  color: white;
   text-decoration: none;
   margin-left: 20px;
   font-size: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 .menu a:hover {

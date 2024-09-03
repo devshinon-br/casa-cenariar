@@ -5,16 +5,25 @@ import 'swiper/css/navigation';
 import css from './Samples.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import imagem1 from '../../assets/samples/IMG_1.png';
+import marrocos from '../../assets/samples/marrocos.png';
+import tulum from '../../assets/samples/tulum.png';
+import grecia from '../../assets/samples/grecia.png';
+import bali from '../../assets/samples/bali.png';
+import beach from '../../assets/samples/beach.png';
+import italia from '../../assets/samples/italia.png';
+import colors from '../../assets/samples/colors.png';
 
 function Samples() {
     const swiperRef = useRef(null);
 
     const images = [
-        { "src": imagem1, "alt": "Marrocos", "name": "MARROCOS" },
-        { "src": imagem1, "alt": "Tulum", "name": "TULUM" },
-        { "src": imagem1, "alt": "Grécia", "name": "GRÉCIA" },
-        { "src": imagem1, "alt": "Tulum", "name": "TULUM" }
+        { "src": tulum, "alt": "Tulum", "name": "TULUM" },
+        { "src": marrocos, "alt": "Marrocos", "name": "MARROCOS" },
+        { "src": grecia, "alt": "Grécia", "name": "GRÉCIA" },
+        { "src": bali, "alt": "Bali", "name": "BALI" },
+        { "src": beach, "alt": "Beach", "name": "BEACH" },
+        { "src": italia, "alt": "Itália", "name": "ITÁLIA" },
+        { "src": colors, "alt": "Colors", "name": "COLORS" },
     ];
 
     return (

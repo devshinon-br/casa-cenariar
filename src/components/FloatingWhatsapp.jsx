@@ -1,12 +1,14 @@
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import logo from '../assets/logo-header.png'
 
 export default function FloatingWhatsapp() {
 
     return (
         <FloatingWhatsApp 
             phoneNumber='+5534111111111'
-            accountName='Como posso ajudá-lo?'
-            chatMessage='Seja bem-vindo ao espaço Cenariar. Informe a sua mensagem abaixo:'
+            accountName='Cenariar'
+            chatMessage='Seja bem-vindo ao espaço Cenariar. Como podemos ajudá-lo?'
+            avatar={logo}
             statusMessage=''
             placeholder='Digite a sua mensagem'
             allowClickAway={true}

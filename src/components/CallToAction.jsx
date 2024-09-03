@@ -12,7 +12,7 @@ const Button = styled.a`
   height: 80px;          
   padding: 10px 20px;    
   border: none;           
-  border-radius: 30px;     
+  border-radius: 50px;     
   font-family: 'Inter', sans-serif;    
   cursor: pointer;       
   transition: background-color 0.3s ease; 
