@@ -8,7 +8,7 @@
 }
 
 .container {
-  max-width: 1200px;
+ 
   margin: auto;
   padding: 0 20px;
 }
@@ -26,11 +26,12 @@ h2 {
 
 .duvidaContainer {
   background-color: black;
-  border-radius: 20px; 
-  overflow: hidden; 
-  margin: 20px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
   border: 1px solid #ddd;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ocupa toda a largura do container */
 }
 
 .pergunta {
@@ -46,19 +47,44 @@ h2 {
 
 .seta::after {
   content: "\25BC";
+  content: "";
   font-size: 1rem;
-  color: white; 
+  color: white;
   display: inline-block;
   margin-left: 0.5rem;
   margin-right: 20px;
-}
-
-.seta::after {
-  content: ""; 
 }
 
 .resposta {
   margin: 10px 0 0;
   color: white;
   padding: 15px;
+}
+
+/* Responsivo para telas entre 768px e 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .secaoDuvidasFrequentes {
+    padding: 30px 0;
+    
+  }
+
+  .duvidaContainer {
+    margin: 15px 0;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .pergunta {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .resposta {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
 }
