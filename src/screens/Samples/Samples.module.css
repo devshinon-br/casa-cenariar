@@ -46,6 +46,10 @@
   border-radius: 5px;
 }
 
+.imagem:hover{
+  cursor: pointer;
+}
+
 .nome-imagem {
   font-size: 1rem;
   color: #333;

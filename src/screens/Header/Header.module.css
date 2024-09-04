@@ -2,8 +2,8 @@
   padding: 10px 20px;
   background-color: rgba(34, 31, 31, 0.76);
   z-index: 1000;
-  position: absolute; 
-  top: 0; 
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -26,6 +26,7 @@
 
 .menu {
   display: flex;
+  flex-direction: row;
 }
 
 .menu a {

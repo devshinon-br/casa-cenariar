@@ -21,7 +21,7 @@ function Home() {
           <p className={css.rightText}>
           <a href='https://www.instagram.com/casacenariar/' target="_blank">A Casa Cenariar</a> é a mais nova casa de criação de conteúdo de Uberlândia, 
           aqui a locação conta com cenários de vários países para fazer vídeos e fotos: 
-          Caraíva, Tulum com essa banheira linda, Grécia, Itália e até Marrocos
+          Caraíva, Tulum, Grécia, Itália e até Marrocos
           </p>
         </div>
       </div>

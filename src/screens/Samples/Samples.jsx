@@ -33,13 +33,18 @@ function Samples() {
                 <Swiper
                     modules={[Navigation, Pagination]}
                     spaceBetween={10}
-                    slidesPerView={3}
-                    navigation={{
-                        
-                    }}
-                    pagination={{ clickable: true}}
+                    navigation={{}}
+                    pagination={{ clickable: true }}
                     className={css['meu-carrossel']}
                     onInit={(swiper) => { swiperRef.current = swiper; }}
+                    breakpoints={{
+                        780: {
+                            slidesPerView: 1,
+                        },
+                        1200: {
+                            slidesPerView: 3,
+                        },
+                    }}
                 >
                     {images.map((image, index) => (
                         <SwiperSlide key={index} className={css['meu-slide']}>
