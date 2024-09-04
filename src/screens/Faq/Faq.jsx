@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import css from './Faq.module.css';
+import { SlArrowDown, SlArrowUp  } from "react-icons/sl";
+
 
 function Faq() {
     const [duvidasFrequentes, setDuvidasFrequentes] = useState([]);
@@ -32,7 +34,7 @@ function Faq() {
                             onClick={() => handleToggle(index)}>
                             {duvida.pergunta}
                             <span className={css.seta}>
-                                {activeIndex === index ? '∧ ' : '∨ '}
+                                {activeIndex === index ? <SlArrowUp /> : <SlArrowDown />}
                             </span>
                         </div>
                         {activeIndex === index && (
