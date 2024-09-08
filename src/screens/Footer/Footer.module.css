@@ -1,3 +1,4 @@
+/* Código original mantido */
 .secaoFooter {
     background-color: black;
 }
@@ -70,3 +71,41 @@ div h3 {
     color: #007bff;
 }
 
+/* CSS responsivo para telas de 768px a 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .footerLogoCenariar {
+        text-align: center; 
+    }
+
+    .container {
+        flex-direction: column; 
+        gap: 20px; 
+        align-items: center; 
+    }
+
+    .logo {
+        max-width: 150px; 
+    }
+
+    .div-contato p {
+        font-size: 18px ; 
+        margin-top: 10px; 
+    }
+
+    .centralizado {
+        font-size: 24px ; 
+    }
+
+    .redesSociais {
+        margin-right: 0; 
+    }
+
+    .social-icons {
+        margin-top: 15px; 
+        gap: 15px ;
+    }
+
+    .social-icons i {
+        font-size: 24px; 
+    }
+}
