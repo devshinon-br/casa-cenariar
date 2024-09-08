@@ -6,7 +6,9 @@ function Form() {
 
     const [form, setForm] = useState({
         nome: '',
-        email: ''
+        phone: '',
+        email: '',
+        mensagem: ''
     })
 
     function getData(e) {
@@ -15,13 +17,14 @@ function Form() {
     }
 
     function validar() {
-        if (form.nome === '' || form.phone === '' || form.email === '')
+        if (form.nome === '' || form.phone === '' || form.email === '' || form.mensagem === '')
             alert('Todos os campos precisam ser preenchidos');
         else {
             var templateParams = {
                 from_name: form.nome,
                 from_phone: form.phone,
                 from_email: form.email,
+                from_message: form.mensagem
             };
 
             emailjs.send("service_jypz835",
