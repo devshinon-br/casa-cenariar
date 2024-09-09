@@ -1,7 +1,26 @@
-import css from './Header.module.css'
+import { useState, useEffect, useRef } from 'react';
+import css from './Header.module.css';
 import logo from "../../assets/logo-header.png";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null); // Referência para o menu
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className={css.header}>
       <div className={css.headerContainer}>
@@ -10,7 +29,13 @@ const Header = () => {
             <img src={logo} alt="Logo Cenariar" />
           </a>
         </div>
-        <nav className={css.menu}>
+        <button className={css.menuToggle} onClick={toggleMenu}>
+          ☰
+        </button>
+        <nav 
+          className={`${css.menu} ${isMenuOpen ? css.menuOpen : css.menuClosed}`}
+          ref={menuRef} // Adicione a referência aqui
+        >
           <li><a href="#quem-somos">Quem Somos</a></li>
           <li><a href="#espacos">Nossos Espaços</a></li>
           <li><a href="#faq">FAQ</a></li>
