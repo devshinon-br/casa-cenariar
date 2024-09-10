@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Estilo para o botão de ação
 const Button = styled.a`
   background-color: #000; 
   color: #fff;          
@@ -16,12 +15,18 @@ const Button = styled.a`
   font-family: 'Inter', sans-serif;    
   cursor: pointer;       
   transition: background-color 0.3s ease; 
-  font-size: 1.5vw; 
+  font-size: 1.3rem; 
   text-decoration: none;
+  position: absolute;
+  top: 500px;
+  left: 0px;
+  
 
-  @media (max-width: 768px) {
-    width: 100%; 
-    font-size: 5vw;
+  @media (max-width: 1199px) { 
+    max-width: 250px;
+    max-height: 50px;
+    position: static;
+    order: 2;
   }
 
   &:hover {
