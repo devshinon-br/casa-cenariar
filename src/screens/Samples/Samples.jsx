@@ -38,7 +38,7 @@ function Samples() {
                     className={css['meu-carrossel']}
                     onInit={(swiper) => { swiperRef.current = swiper; }}
                     breakpoints={{
-                        780: {
+                        768: {
                             slidesPerView: 1,
                         },
                         1200: {
