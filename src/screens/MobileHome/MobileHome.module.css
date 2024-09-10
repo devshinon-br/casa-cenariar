@@ -1,0 +1,55 @@
+.home {
+    display: flex;
+    flex-direction: column;   
+    margin-bottom: 130px;
+}
+
+.imgFundo img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 20rem;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftText {
+    position: relative;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.right * {
+    font-size: 0.8rem;
+}
+
+.right a {
+    text-decoration: none;
+}
+
+.rightText{
+    position: relative;
+    text-align: center;
+    color: rgb(78, 78, 78);
+}
