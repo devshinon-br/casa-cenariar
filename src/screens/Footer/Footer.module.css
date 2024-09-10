@@ -1,4 +1,3 @@
-/* Código original mantido */
 .secaoFooter {
     background-color: black;
 }
@@ -71,8 +70,7 @@ div h3 {
     color: #007bff;
 }
 
-/* CSS responsivo para telas de 768px a 1200px */
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 1199px) {
     .footerLogoCenariar {
         text-align: center; 
     }

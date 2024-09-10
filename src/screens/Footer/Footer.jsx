@@ -5,7 +5,7 @@ import logoCenariar from '../../assets/logo_cenariar_fundo_branco-.png';
 
 function Footer() {
     return (
-        <section className={css.secaoFooter}>
+        <footer className={css.secaoFooter}>
             <div className={css.container}>
                 <div className={css['footerLogoCenariar']}>
                     <a href='#home'>
@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
     );
 }
 
