@@ -1,6 +1,6 @@
 .secaoDuvidasFrequentes {
   background-color: #ffffff;
-  padding: 50px 0;
+  margin: 50px 0;
 }
 
 .secaoDuvidasFrequentes h2 {
@@ -8,20 +8,16 @@
 }
 
 .container {
- 
-  margin: auto;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 150px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-align: center;
   margin-bottom: 30px;
   color: black;
-}
-
-.secaoDuvidasFrequentes p {
-  font-size: 1rem !important;
 }
 
 .duvidaContainer {
@@ -31,17 +27,19 @@ h2 {
   margin: 20px 0;
   border: 1px solid #ddd;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Ocupa toda a largura do container */
 }
 
 .pergunta {
-  font-size: 1.2rem;
   cursor: pointer;
   padding: 15px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.pergunta p {
+  font-size: 1.3rem;
 }
 
 .seta::after {
@@ -60,11 +58,13 @@ h2 {
   padding: 15px;
 }
 
-/* Responsivo para telas entre 768px e 1200px */
-@media (min-width: 768px) and (max-width: 1200px) {
+.resposta p {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1199px) {
   .secaoDuvidasFrequentes {
     padding: 30px 0;
-    
   }
 
   .duvidaContainer {
@@ -74,16 +74,14 @@ h2 {
   }
 
   .pergunta {
-    font-size: 1.1rem;
     padding: 10px;
   }
 
-  h2 {
-    font-size: 1.8rem;
+  .resposta p {
+    padding: 10px;
   }
 
-  .resposta {
-    font-size: 0.5rem;
-    padding: 10px;
+  .container {
+    margin: 0px 40px !important;
   }
 }
