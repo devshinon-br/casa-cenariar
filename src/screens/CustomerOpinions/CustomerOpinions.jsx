@@ -5,17 +5,16 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import clienteficticio from '../../assets/customer-opinions/cliente-ficticio.svg';
 
 function CustomerOpinions() {
 
     const swiperRef = useRef(null);
 
     const images = [
-        { "src": clienteficticio, "alt": "Avaliação da []", "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type a." },
-        { "src": clienteficticio, "alt": "Avaliação da []", "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. See more. " },
-        { "src": clienteficticio, "alt": "Avaliação da []", "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" },
-        { "src": clienteficticio, "alt": "Avaliação da []", "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry." }
+        { "name": "Maria", "alt": "Avaliação da []", "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type a." },
+        { "name": "Maria", "alt": "Avaliação da []", "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. See more. " },
+        { "name": "Maria", "alt": "Avaliação da []", "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a" },
+        { "name": "Maria", "alt": "Avaliação da []", "review": "Lorem Ipsum is simply dummy text of the printing and typesetting industry." }
     ];
 
     return (
@@ -32,7 +31,7 @@ function CustomerOpinions() {
                     className={css['meu-carrossel']}
                     onInit={(swiper) => { swiperRef.current = swiper; }}
                     breakpoints={{
-                        780: {
+                        768: {
                             slidesPerView: 1,
                         },
                         1200: {
@@ -42,9 +41,7 @@ function CustomerOpinions() {
                 >
                     {images.map((image, index) => (
                         <SwiperSlide key={index} className={css['meu-slide']}>
-                            <div className={css['imagem-container']}>
-                                <img src={image.src} alt={image.alt} className={css['imagem']} />
-                            </div>
+                            <p className={css['nome-cliente']}>{image.name}</p>
                             <p className={css['avaliacao']}>{image.review}</p>
                         </SwiperSlide>
                     ))}
