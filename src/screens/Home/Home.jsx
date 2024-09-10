@@ -8,7 +8,7 @@ function Home() {
   return (
     <section id='home' className={css.home}>
       <Header/>
-      <div className={css.imgFundo}>
+      <div className={`${css.imgFundo} ${css.fundo_preto}`}>
         <img src={imgInicial} alt="Logo Cenariar" />
       </div>
       <div className={css.container}>

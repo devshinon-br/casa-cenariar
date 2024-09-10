@@ -1,24 +1,30 @@
 .home {
     margin-bottom: 130px;
+    text-align: center;
+}
+
+.fundo_preto {
+    background-color: rgb(19, 18, 18);
 }
 
 .imgFundo img {
     position: relative;
     z-index: 1;
-    width: 100%;
-    height: 800px;
+    width: 80%;
 }
 
 .container {
     display: flex;
     position: relative;
     z-index: 2;
+    margin: auto;
+    max-width: 2200px;
 }
 
 .left, .right {
     display: block;
     position: relative;
-    z-index: 3; 
+    z-index: 3;
 }
 
 .left {
@@ -50,9 +56,66 @@
     text-decoration: none;
 }
 
-.rightText{
+.rightText {
     position: relative;
     text-align: center;
     color: rgb(78, 78, 78);
     font-size: 22px;
+}
+/* Responsividade para telas de 0 a 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        margin-top: 0;
+        width: 100%;
+        background-image: none; /* Remove o background-image em telas menores */
+        padding: 10px;
+    }
+
+
+
+
+    .leftText {
+        font-size: 1.5rem;
+        text-align: center;
+        left: 0; /* Ajusta o alinhamento */
+        top: 0;
+    }
+
+    .right {
+        padding: 10px;
+    }
+
+    .rightText {
+        font-size: 18px;
+    }
+}
+
+/* Responsividade para telas de 768 a 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left {
+        width: 40%;
+        margin-top: -100px; /* Ajuste da margem para telas médias */
+    }
+
+    .leftText {
+        font-size: 1.8rem;
+        text-align: left;
+        left: 10%;
+    }
+
+    .right {
+        padding: 15px;
+    }
+
+    .rightText {
+        font-size: 20px;
+    }
 }
