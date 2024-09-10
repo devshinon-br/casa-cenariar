@@ -7,8 +7,18 @@ function WhoWeAre() {
     <div id="quem-somos" className={css.container}>
       <div className={css.textContainer}>
         <h1>Quem somos?</h1>
-        <p>Consectetur adipisicing deserunt deserunt dolore cillum elit dolor amet labore deserunt consequat nisi magna aliqua. Mollit esse dolore amet minim duis reprehenderit incididunt.</p>
-      </div>
+        <p>
+          <span>
+            Somos uma casa de produção de conteúdo especializada em criar
+            experiências visuais inesquecíveis para o seu ensaio, marca e
+            estratégia.
+          </span>
+          <br /> <br />
+          <span>
+            Cada detalhe é pensado para refletir a essência do que você busca
+            pra sua campanha, oferecendo cenários lindos!
+          </span>
+        </p>     </div>
       <CallToAction />
       <img className={css.responsiveImage} src={team} alt="Grupo de quatro pessoas que compõe a equipe da casa cenariar" />
     </div>
