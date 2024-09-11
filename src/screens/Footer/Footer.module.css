@@ -1,6 +1,6 @@
-/* Código original mantido */
 .secaoFooter {
     background-color: black;
+    padding: 20px 0;
 }
 
 .footerLogoCenariar {
@@ -12,6 +12,11 @@
 .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -29,6 +34,7 @@ div h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .div-contato p {
@@ -71,41 +77,82 @@ div h3 {
     color: #007bff;
 }
 
-/* CSS responsivo para telas de 768px a 1200px */
-@media (min-width: 768px) and (max-width: 1200px) {
-    .footerLogoCenariar {
-        text-align: center; 
+/* CSS responsivo para telas de 0 a 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
     }
 
-    .container {
-        flex-direction: column; 
-        gap: 20px; 
-        align-items: center; 
+    .footerLogoCenariar {
+        text-align: center;
     }
 
     .logo {
-        max-width: 150px; 
+        max-width: 130px;
     }
 
     .div-contato p {
-        font-size: 18px ; 
-        margin-top: 10px; 
+        font-size: 16px;
+        margin-top: 10px;
     }
 
     .centralizado {
-        font-size: 24px ; 
+        font-size: 20px;
     }
 
     .redesSociais {
-        margin-right: 0; 
+        margin-right: 0;
     }
 
     .social-icons {
-        margin-top: 15px; 
-        gap: 15px ;
+        margin-top: 12px;
+        gap: 12px;
     }
 
     .social-icons i {
-        font-size: 24px; 
+        font-size: 22px;
+    }
+}
+
+/* CSS responsivo para telas de 768px a 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footerLogoCenariar {
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .div-contato p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .centralizado {
+        font-size: 24px;
+    }
+
+    .redesSociais {
+        margin-right: 0;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .social-icons i {
+        font-size: 24px;
     }
 }

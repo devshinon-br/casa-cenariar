@@ -1,63 +1,85 @@
-.FaleConosco {
-    width: 100%;
-    padding: 0;
-    margin: 0;  
-}
-
-.FaleConosco h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
 .contato {
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, #98d5ab, #f3a1a8);
+    padding: 20px;
 }
 
 .contato-superior {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 100%;
     box-sizing: border-box;
-    margin: 50px 50px;
+    margin: 0; 
 }
 
 .detalhesContato {
-    flex: 0 0 45%; 
+    flex: 1; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
     box-sizing: border-box;
-    margin-left: 20px;
-    margin-right: 20px;   
 }
 
 .detalhesContato h2 {
-    margin-bottom: 40px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 .secao-form {
-    flex: 1;
+    flex: 1; 
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: #f0f0f0;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-align: center;
+@media (min-width: 768px) {
+    .contato-superior {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .detalhesContato {
+        flex: 1; 
+        margin: 0;
+        padding: 10px;
+    }
+
+    .secao-form {
+        flex: 1; 
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.5;
+        margin: 0 10px;
+    }
 }
 
-p {
-    font-size: 24px;
-    text-align: justify;
-    line-height: 1.5;
-    margin-left: 20px;
-    margin-right: 20px;
+@media (min-width: 1200px) {
+    .contato-superior {
+        padding: 20px;
+    }
+
+    .detalhesContato h2 {
+        font-size: 2.5rem;
+    }
+
+    .secao-form {
+        padding: 20px;
+    }
 }

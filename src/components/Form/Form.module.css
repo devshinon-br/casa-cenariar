@@ -1,5 +1,22 @@
+/* Estilos gerais */
 * {
     font-size: 20px;
+}
+
+.FaleConosco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos do formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 input[type="text"],
@@ -11,6 +28,7 @@ textarea[name="mensagem"] {
     margin: 15px auto;
     border-radius: 10px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 input[name="nome"] {
@@ -40,8 +58,44 @@ input[type="button"]:hover {
     color: #fff;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+/* Responsividade de 0 a 768px */
+@media (max-width: 768px) {
+    .form {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="phone"],
+    input[type="email"],
+    textarea[name="mensagem"] {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    input[type="button"] {
+        width: 50%;
+    }
+}
+
+/* Responsividade de 768px a 1200px */
+@media (min-width: 768px) {
+    .form {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="phone"],
+    input[type="email"],
+    textarea[name="mensagem"] {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    input[type="button"] {
+        align-self: center;
+    }
 }
