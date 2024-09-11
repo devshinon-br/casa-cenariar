@@ -48,16 +48,45 @@
     background-color: #f0f0f0;
 }
 
-h2 {
+.detalhesContato h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     text-align: center;
 }
 
-p {
-    font-size: 24px;
+
+.detalhesContato p {
+    font-size: 1.5rem;
     text-align: justify;
     line-height: 1.5;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+@media (max-width: 1199px) {
+    .contato-superior {
+        flex-direction: column;
+    }
+
+    .contato {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .secao-form {
+        padding: 0px;
+    }
+
+    .detalhesContato {
+        margin-bottom: 20px;
+    }
+
+    .detalhesContato h2 {
+        font-size: 1.5rem;
+    }
+
+    .detalhesContato p {
+        font-size: 1rem;
+    }
 }

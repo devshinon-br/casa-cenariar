@@ -12,10 +12,11 @@
 }
 
 .titulo-carrossel {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
   margin-top: 50px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .meu-carrossel {
@@ -33,7 +34,7 @@
 }
 
 .nome-cliente {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
   text-align: center;
 }
@@ -44,10 +45,26 @@
 }
 
 .avaliacao {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: white;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 50px;
   padding: 0px 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 1199px) {
+  .titulo-carrossel {
+    font-size: 1.5rem;
+  }
+
+  .nome-cliente {
+    font-size: 1.3rem;
+  }
+
+  .avaliacao {
+    font-size: 1rem;
+  }
 }

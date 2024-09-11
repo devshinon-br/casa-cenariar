@@ -27,9 +27,12 @@
 
 .leftText {
     position: relative;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .right {
@@ -41,7 +44,7 @@
 }
 
 .right * {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .right a {
@@ -52,4 +55,7 @@
     position: relative;
     text-align: center;
     color: rgb(78, 78, 78);
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
 }

@@ -15,7 +15,7 @@ const Button = styled.a`
   font-family: 'Inter', sans-serif;    
   cursor: pointer;       
   transition: background-color 0.3s ease; 
-  font-size: 1.3rem; 
+  font-size: 2rem; 
   text-decoration: none;
   position: absolute;
   top: 500px;
@@ -25,6 +25,7 @@ const Button = styled.a`
   @media (max-width: 1199px) { 
     max-width: 250px;
     max-height: 50px;
+    font-size: 1.5rem; 
     position: static;
     order: 2;
   }

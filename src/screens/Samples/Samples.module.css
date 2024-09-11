@@ -12,7 +12,8 @@
 }
 
 .titulo-carrossel {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
   color: #333;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -51,9 +52,19 @@
 }
 
 .nome-imagem {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #333;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1199px) {
+  .titulo-carrossel {
+    font-size: 1.5rem;
+  }
+
+  .nome-imagem {
+    font-size: 1rem;
+  }
 }

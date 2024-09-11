@@ -13,18 +13,20 @@ function Footer() {
                     </a>
                 </div>
 
-                <div className={css['div-contato']}>
-                    <h3 className={css['centralizado']}>Contato</h3>
-                    <p><i className="fas fa-phone"></i> +55 34 99664-6441</p>
-                </div>
+                <div className={css.containerContatos}>
+                    <div className={css['div-contato']}>
+                        <h3 className={css['centralizado']}>Contato</h3>
+                        <p><i className="fas fa-phone"></i> (34) 99664-6441</p>
+                    </div>
 
-                <div className={css.redesSociais}>
-                    <h3 className={css['centralizado']}>Redes sociais</h3>
-                    <div className={css['social-icons']}>
-                        <a href="https://www.facebook.com/profile.php?id=61557559003256">
-                            <i className="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/casacenariar/">
-                            <i className="fab fa-instagram"></i></a>
+                    <div className={css.redesSociais}>
+                        <h3 className={css['centralizado']}>Redes sociais</h3>
+                        <div className={css['social-icons']}>
+                            <a href="https://www.facebook.com/profile.php?id=61557559003256">
+                                <i className="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/casacenariar/">
+                                <i className="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>

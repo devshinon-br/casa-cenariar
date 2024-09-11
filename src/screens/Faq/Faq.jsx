@@ -32,7 +32,7 @@ function Faq() {
                         <div
                             className={css.pergunta}
                             onClick={() => handleToggle(index)}>
-                            {duvida.pergunta}
+                            <p>{duvida.pergunta}</p>
                             <span className={css.seta}>
                                 {activeIndex === index ? <SlArrowUp /> : <SlArrowDown />}
                             </span>
