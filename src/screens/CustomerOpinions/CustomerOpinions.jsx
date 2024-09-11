@@ -1,10 +1,10 @@
-import css from "./CustomerOpinions.module.css";
-import { useRef } from "react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import css from './CustomerOpinions.module.css';
+import { useRef } from 'react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
 
 function CustomerOpinions() {
   const swiperRef = useRef(null);
@@ -80,9 +80,9 @@ function CustomerOpinions() {
   ];
 
   return (
-    <section id="opiniao-cliente" className={css["fundo-tela"]}>
+    <section id='opiniao-cliente' className={css['fundo-tela']}>
       <div className={css.container}>
-        <h2 className={css["titulo-carrossel"]}>
+        <h2 className={css['titulo-carrossel']}>
           Qual é a opinião dos nossos clientes?
         </h2>
         <Swiper
@@ -90,10 +90,8 @@ function CustomerOpinions() {
           spaceBetween={10}
           navigation={{}}
           pagination={{ clickable: true }}
-          className={css["meu-carrossel"]}
-          onInit={(swiper) => {
-            swiperRef.current = swiper;
-          }}
+          className={css['meu-carrossel']}
+          onInit={(swiper) => { swiperRef.current = swiper; }}
           breakpoints={{
             768: {
               slidesPerView: 1,
@@ -104,9 +102,9 @@ function CustomerOpinions() {
           }}
         >
           {images.map((image, index) => (
-            <SwiperSlide key={index} className={css["meu-slide"]}>
-              <p className={css["nome-cliente"]}>{image.name}</p>
-              <p className={css["avaliacao"]}>{image.review}</p>
+            <SwiperSlide key={index} className={css['meu-slide']}>
+              <p className={css['nome-cliente']}>{image.name}</p>
+              <p className={css['avaliacao']}>{image.review}</p>
             </SwiperSlide>
           ))}
         </Swiper>
