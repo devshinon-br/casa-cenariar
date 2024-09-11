@@ -58,6 +58,14 @@ input[type="button"]:hover {
     color: #fff;
 }
 
+.successMessage {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
 /* Responsividade de 0 a 768px */
 @media (max-width: 768px) {
     .form {
@@ -75,6 +83,11 @@ input[type="button"]:hover {
 
     input[type="button"] {
         width: 50%;
+    }
+
+    .successMessage {
+        font-size: 0.9rem; 
+        margin-top: 8px;
     }
 }
 
@@ -98,4 +111,9 @@ input[type="button"]:hover {
     input[type="button"] {
         align-self: center;
     }
+    .successMessage {
+        font-size: 1rem; 
+        margin-top: 10px; 
+    }
 }
+
