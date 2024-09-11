@@ -44,7 +44,7 @@ function Form() {
                 from_name: form.nome,
                 from_phone: form.phone,
                 from_email: form.email,
-                message: form.mensagem
+                from_message: form.mensagem
             };
 
             console.log('Enviando dados:', templateParams); // Adicione este log para verificar os dados
