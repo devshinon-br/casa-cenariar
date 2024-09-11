@@ -5,7 +5,7 @@ export default function FloatingWhatsapp() {
 
     return (
         <FloatingWhatsApp 
-            phoneNumber='+5534111111111'
+            phoneNumber='+5534996646441'
             accountName='Cenariar'
             chatMessage='Seja bem-vindo ao espaço Cenariar. Como podemos ajudá-lo?'
             avatar={logo}
