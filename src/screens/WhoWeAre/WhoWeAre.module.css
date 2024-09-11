@@ -29,8 +29,13 @@
 }
 
 .textContainer h1 {
-  font-size: 2rem !important;
+  font-size: 1.3rem !important;
   color: #333;
+}
+
+.spamEspaco{
+  display: block;
+  margin-bottom: 1em;
 }
 
 @media (max-width: 1199px) {
