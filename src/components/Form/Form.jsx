@@ -4,6 +4,8 @@ import css from './Form.module.css';
 
 function Form() {
 
+    // Define o estado inicial do formulário com os campos 'nome', 'phone', 'email' e 'mensagem'.
+// Cada campo é inicializado com uma string vazia.
     const [form, setForm] = useState({
         nome: '',
         phone: '',
